@@ -248,32 +248,33 @@ setInterval(() => {
 }, 700);
 
 /* 📸 PHOTO SLIDESHOW */
-const photos = [
-    "https://picsum.photos/id/1011/600/400",
-    "https://picsum.photos/id/1015/600/400",
-    "https://picsum.photos/id/1025/600/400"
-];
+// const photos = [
+//     "https://picsum.photos/id/1011/600/400",
+//     "https://picsum.photos/id/1015/600/400",
+//     "https://picsum.photos/id/1025/600/400"
+// ];
 
-const gallery = document.getElementById("gallery");
-let index = 0;
+// const gallery = document.getElementById("gallery");
+// let index = 0;
 
-photos.forEach((src, i) => {
-    const img = document.createElement("img");
-    img.src = src;
-    if (i === 0) img.classList.add("active");
-    gallery.appendChild(img);
-});
+// photos.forEach((src, i) => {
+//     const img = document.createElement("img");
+//     img.src = src;
+//     if (i === 0) img.classList.add("active");
+//     gallery.appendChild(img);
+// });
 
-setInterval(() => {
-    const imgs = gallery.querySelectorAll("img");
-    imgs[index].classList.remove("active");
-    index = (index + 1) % imgs.length;
-    imgs[index].classList.add("active");
-}, 3000);
+// setInterval(() => {
+//     const imgs = gallery.querySelectorAll("img");
+//     imgs[index].classList.remove("active");
+//     index = (index + 1) % imgs.length;
+//     imgs[index].classList.add("active");
+// }, 3000);
 </script>
 
 </body>
 </html>
+
 
 
 
