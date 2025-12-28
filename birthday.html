@@ -24,13 +24,12 @@ body {
     color: white;
 }
 
-/* Main container */
 .container {
     text-align: center;
     z-index: 5;
 }
 
-/* Glowing text */
+
 h1 {
     font-size: 4rem;
     background: linear-gradient(90deg, gold, hotpink, cyan, gold);
@@ -47,7 +46,6 @@ h2 {
     animation: fadeUp 2s forwards 1.5s;
 }
 
-/* Cake */
 .cake {
     position: relative;
     width: 200px;
@@ -89,7 +87,6 @@ h2 {
     animation: flicker 0.15s infinite;
 }
 
-/* 🔥 PHOTO GALLERY */
 .gallery {
     position: relative;
     width: 260px;
@@ -113,7 +110,6 @@ h2 {
     opacity: 1;
 }
 
-/* Balloons */
 .balloon {
     position: absolute;
     bottom: -150px;
@@ -134,7 +130,6 @@ h2 {
     transform: translateX(-50%);
 }
 
-/* Confetti */
 .confetti {
     position: absolute;
     width: 10px;
@@ -142,7 +137,7 @@ h2 {
     animation: fall linear infinite;
 }
 
-/* Fireworks */
+
 .firework {
     position: absolute;
     width: 6px;
@@ -152,7 +147,6 @@ h2 {
     animation: explode 1.5s infinite;
 }
 
-/* Animations */
 @keyframes glow {
     0% { background-position: 0%; }
     100% { background-position: 300%; }
@@ -201,8 +195,6 @@ h2 {
   <h1>🎉 Happy Birthday Damini 🎂  my beautiful & pure soul ❤️</h1>
    <h2>Life is so much better with you by my side. Let’s make more crazy memories, laugh a little louder, and shine a little brighter this year 🎂🥳</h2>
 
-
-    <!-- Cake -->
     <div class="cake">
         <div class="layer"></div>
         <div class="layer"></div>
@@ -210,8 +202,7 @@ h2 {
         <div class="candle"><div class="flame"></div></div>
     </div>
 
-    <!-- 📸 PHOTO GALLERY -->
-    <!-- <div class="gallery" id="gallery"></div> -->
+   
 </div>
 
 
@@ -223,7 +214,6 @@ h2 {
 <script>
 const colors = ['#ff4d6d', '#ffd166', '#4cc9f0', '#cdb4db', '#80ed99'];
 
-/* 🎈 Balloons */
 for (let i = 0; i < 12; i++) {
     const b = document.createElement('div');
     b.className = 'balloon';
@@ -233,7 +223,6 @@ for (let i = 0; i < 12; i++) {
     document.body.appendChild(b);
 }
 
-/* 🎊 Confetti */
 for (let i = 0; i < 80; i++) {
     const c = document.createElement('div');
     c.className = 'confetti';
@@ -243,7 +232,6 @@ for (let i = 0; i < 80; i++) {
     document.body.appendChild(c);
 }
 
-/* 🎆 Fireworks */
 setInterval(() => {
     const f = document.createElement('div');
     f.className = 'firework';
@@ -253,33 +241,11 @@ setInterval(() => {
     setTimeout(() => f.remove(), 1500);
 }, 700);
 
-/* 📸 PHOTO SLIDESHOW */
-// const photos = [
-//     "https://picsum.photos/id/1011/600/400",
-//     "https://picsum.photos/id/1015/600/400",
-//     "https://picsum.photos/id/1025/600/400"
-// ];
-
-// const gallery = document.getElementById("gallery");
-// let index = 0;
-
-// photos.forEach((src, i) => {
-//     const img = document.createElement("img");
-//     img.src = src;
-//     if (i === 0) img.classList.add("active");
-//     gallery.appendChild(img);
-// });
-
-// setInterval(() => {
-//     const imgs = gallery.querySelectorAll("img");
-//     imgs[index].classList.remove("active");
-//     index = (index + 1) % imgs.length;
-//     imgs[index].classList.add("active");
-// }, 3000);
 </script>
 
 </body>
 </html>
+
 
 
 
