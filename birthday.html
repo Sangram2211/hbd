@@ -192,7 +192,7 @@ h2 {
 
 <body>
 
-     <audio autoplay>
+     <audio autoplay muted id="bgAudio">
     <source src="happy-birthday-322777.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
@@ -213,6 +213,12 @@ h2 {
     <!-- 📸 PHOTO GALLERY -->
     <!-- <div class="gallery" id="gallery"></div> -->
 </div>
+
+
+    <script>
+  const audio = document.getElementById("bgAudio");
+  audio.muted = false;
+</script>
 
 <script>
 const colors = ['#ff4d6d', '#ffd166', '#4cc9f0', '#cdb4db', '#80ed99'];
@@ -274,6 +280,7 @@ setInterval(() => {
 
 </body>
 </html>
+
 
 
 
